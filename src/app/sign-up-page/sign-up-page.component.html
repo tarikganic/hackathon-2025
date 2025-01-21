@@ -1,21 +1,21 @@
 <div id="apply" class="flex flex-col md:auto w-auto mx-auto items-center my-20">
     <div class="md:text-8xl text-4xl font-semibold text-center text-hack-yellow">LET'S APPLY TO BEST HACKATHON</div>
-    <div class="flex md:flex-row flex-col m-auto w-2/3 md:py-20 py-10 justify-center">
-        <div class="text-white md:w-1/2 w-full">
+    <div class="flex md:flex-row flex-col m-auto w-2/3 md:py-20 py-10 justify-center items-center">
+
+        <div class="text-white md:w-1/2 w-full flex">
             <div class=" flex flex-col items-center">
                 <div class="flex flex-row items-end">
                     <h1 class="md:text-8xl text-5xl font-extrabold">1.</h1><h2 class="md:text-7xl text-3xl font-extrabold">CV</h2>
                 </div>
                 <div class="text-white text-lg font-medium md:w-1/2 m-auto">
                     <div class="my-10 text-left">
-                        Before applying, create a Portofolio/CV using our custom template that you can download below!
+                        Before applying, create a Portofolio/CV using our custom template that you can download below! <div class="text-white">Remember to list projects or add your GitHub profile</div>
                     </div>
                     <div class="text-center">
                         <button class="button-30 w-full" role="button" (click)="downloadFile()" ><fa-icon [icon]="faDownload" class=""></fa-icon>CV Template</button>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
         
         <div class="text-white md:w-1/2 w-full  md:border-l-8 border-t-8 md:border-t-0 mt-10 md:mt-0">
@@ -25,10 +25,10 @@
                 </div>
                 <div class="text-white text-lg font-medium md:w-1/2 m-auto">
                     <div class="my-10 text-left">
-                        All done? Great! It's time to apply using our Google form. Don't forget to upload newly created CV!
+                        All done? Great! It's time to apply using our Google form. Don't forget to upload newly created CV! <div class="text-hack-rose underline">Applications will be open on 24.01.2025 at 10:00</div>
                     </div>
-                    <div class="text-center" href="https://forms.gle/LV6bhGfRk5Hab2k3A">
-                        <button class="button-30 w-full" role="button" (click)="goToGoogleForm()"><fa-icon [icon]="faCheckToSlot"></fa-icon>Apply</button>
+                    <div class="text-center">
+                        <button class="button-30 w-full" role="button"><fa-icon class="hidden" [icon]="faCheckToSlot"></fa-icon>Apply in: {{countdown}}</button>
                     </div>
                 </div>
             </div>
